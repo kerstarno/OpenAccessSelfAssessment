@@ -677,7 +677,7 @@ async function callLLM(messages) {
     if (selectedProvider !== 'lmstudio') headers['Authorization'] = `Bearer ${apiKey}`;
     if (selectedProvider === 'openrouter') {
       headers['HTTP-Referer'] = window.location.href;
-      headers['X-Title'] = 'Orla — Open Heritage Assistant';
+      headers['X-Title'] = 'Orla - Open Heritage Assistant';
     }
 
     const res = await fetch(endpoint, {
